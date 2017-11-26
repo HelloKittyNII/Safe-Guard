@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:background="@color/splashBg"
+        tools:context=".activity.SplashActivity">
+
+    <TextView
+
+            android:layout_marginBottom="5dp"
+            android:text="@string/welcome_remind"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowColor="#0f0"
+            android:shadowRadius="2"
+            android:layout_above="@+id/versionLineLayout"
+            android:layout_centerHorizontal="true"
+            />
+    <LinearLayout
+            android:layout_above="@+id/loadProgress"
+            android:id="@+id/versionLineLayout"
+            android:layout_marginBottom="5dp"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                    android:id="@+id/versionRemindTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/version_remind"
+                    android:textSize="16dp"
+
+            />
+
+            <TextView
+                    android:id="@+id/versionNameTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16dp"
+                    android:layout_marginLeft="3dp"
+            />
+    </LinearLayout>
+
+    <ProgressBar
+            android:id="@+id/loadProgress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"/>
+</RelativeLayout>

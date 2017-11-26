@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Safe Guard</string>
+    <string name="welcome_remind">欢迎使用Safe Guard软件</string>
+    <string name="version_remind">版本名称</string>
+</resources>
